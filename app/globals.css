@@ -2,25 +2,50 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0b2526;
+  --health: #2e8b78;
+  --health-deep: #145e52;
+  --gold: #c9a86a;
+  --mist: #f5f8f6;
+  --line: rgba(11, 37, 38, 0.12);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: #0b2526;
+  --color-health: #2e8b78;
+  --color-health-deep: #145e52;
+  --color-mist: #f5f8f6;
+  --color-gold: #c9a86a;
+  --color-line: rgba(11, 37, 38, 0.12);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #d7ebe4;
+  color: #0b2526;
+}
+
+:focus-visible {
+  outline: 2px solid #145e52;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
