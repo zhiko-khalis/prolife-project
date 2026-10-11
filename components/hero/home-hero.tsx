@@ -8,8 +8,17 @@ import { Container } from "@/components/ui/container";
 
 const slides = [
   {
-    image: "/hero/nature-lake.webp",
-    imageAlt: "A calm alpine lake surrounded by green mountains",
+    image: "/hero/Corporate Desk Flags with Green Plants.png",
+    imageAlt: "Pro Life brand flags displayed on a corporate desk with green plants",
+    eyebrow: "Our brand portfolio",
+    title: "Distinctive Brands.",
+    accent: "Better Wellbeing.",
+    text: "We build and manage thoughtful healthcare and wellness brands designed for everyday life across the region.",
+    position: "object-center",
+  },
+  {
+    image: "/hero/Pro Life Strategy Meeting.png",
+    imageAlt: "The Pro Life team discussing regional strategy in a meeting",
     eyebrow: "Nature-led wellness",
     title: "Better Products.",
     accent: "Healthier Lives.",
@@ -55,7 +64,7 @@ export function HomeHero() {
 
   return (
     <section
-      className="relative isolate min-h-144 overflow-hidden bg-ink sm:min-h-160 lg:min-h-[calc(100svh-5rem)]"
+      className="relative isolate min-h-144 overflow-hidden bg-navy-deep sm:min-h-160 lg:min-h-[calc(100svh-5rem)]"
       aria-roledescription="carousel"
       aria-label="Healthcare and nature highlights"
     >
@@ -79,8 +88,8 @@ export function HomeHero() {
             />
           </motion.div>
         ))}
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(6,29,28,0.88)_0%,rgba(8,35,33,0.68)_38%,rgba(8,35,33,0.12)_72%,rgba(8,35,33,0.18)_100%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(6,29,28,0.48)_0%,transparent_45%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,25,35,0.92)_0%,rgba(11,35,64,0.72)_38%,rgba(11,35,64,0.14)_72%,rgba(7,25,35,0.24)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(7,25,35,0.58)_0%,transparent_45%)]" />
       </div>
 
       <Container className="relative flex min-h-144 items-center py-20 sm:min-h-160 lg:min-h-[calc(100svh-5rem)]">
@@ -98,13 +107,13 @@ export function HomeHero() {
             </p>
             <h1 className="mt-5 font-display text-[2.8rem] leading-[0.96] font-semibold tracking-tight sm:text-6xl lg:text-7xl">
               {slide.title}
-              <span className="mt-2 block text-[#b9e0b5]">{slide.accent}</span>
+              <span className="mt-2 block text-cyan">{slide.accent}</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-7 text-white/82 sm:text-lg sm:leading-8">
               {slide.text}
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button href="/products" variant="light">
+              <Button href="/products">
                 Explore Our Products
               </Button>
               <Button

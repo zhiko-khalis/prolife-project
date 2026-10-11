@@ -37,7 +37,7 @@ export function SiteHeader() {
     <header
       className={`sticky top-0 z-50 border-b transition-all duration-300 ${
         scrolled
-          ? "border-ink/10 bg-white/95 shadow-[0_8px_30px_rgba(11,37,38,0.04)] backdrop-blur-md"
+          ? "border-navy/10 bg-white/95 shadow-[0_8px_30px_rgba(11,35,64,0.06)] backdrop-blur-md"
           : "border-transparent bg-white"
       }`}
     >
@@ -60,7 +60,7 @@ export function SiteHeader() {
               >
                 {item.label}
                 <span
-                  className={`absolute -bottom-2 left-0 h-px bg-health transition-all duration-300 ${
+                  className={`absolute -bottom-2 left-0 h-px bg-cyan transition-all duration-300 ${
                     active ? "w-full" : "w-0"
                   }`}
                 />
@@ -72,7 +72,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-2">
           <Link
             href="/for-brands"
-            className="hidden min-h-11 items-center rounded-full bg-ink px-5 text-sm font-medium text-white transition hover:bg-[#16383a] sm:inline-flex"
+            className="hidden min-h-11 items-center rounded-full bg-cyan px-5 text-sm font-medium text-navy transition hover:bg-cyan/80 sm:inline-flex"
           >
             Business Inquiry
           </Link>

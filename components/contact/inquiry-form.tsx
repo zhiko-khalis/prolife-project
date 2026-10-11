@@ -142,7 +142,7 @@ export function InquiryForm() {
           rows={6}
           aria-invalid={Boolean(errors.message)}
           aria-describedby={errors.message ? `${baseId}-message-error` : undefined}
-          className="mt-2 w-full rounded-2xl border border-ink/15 px-4 py-3 text-base text-ink outline-none"
+          className="mt-2 w-full rounded-2xl border border-ink/15 px-4 py-3 text-base text-ink outline-none transition focus:border-cyan-deep"
         />
         {errors.message ? (
           <span id={`${baseId}-message-error`} className="mt-2 block text-sm text-[#8C2F2F]">
@@ -158,7 +158,7 @@ export function InquiryForm() {
 
       <button
         type="submit"
-        className="mt-6 inline-flex min-h-12 items-center rounded-full bg-ink px-6 text-sm font-medium text-white transition hover:bg-[#16383a]"
+        className="mt-6 inline-flex min-h-12 items-center rounded-full bg-cyan px-6 text-sm font-medium text-navy transition hover:bg-cyan/80"
       >
         Send inquiry
       </button>
@@ -200,7 +200,7 @@ function Field({
         onChange={(event) => onChange(event.target.value)}
         aria-invalid={Boolean(error)}
         aria-describedby={error ? `${id}-error` : undefined}
-        className="mt-2 h-12 w-full rounded-2xl border border-ink/15 px-4 text-base text-ink outline-none"
+        className="mt-2 h-12 w-full rounded-2xl border border-ink/15 px-4 text-base text-ink outline-none transition focus:border-cyan-deep"
       />
       {error ? (
         <span id={`${id}-error`} className="mt-2 block text-sm text-[#8C2F2F]">

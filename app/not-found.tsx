@@ -14,7 +14,7 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          className="mt-8 inline-flex min-h-12 items-center rounded-full bg-ink px-6 text-sm font-medium text-white"
+          className="mt-8 inline-flex min-h-12 items-center rounded-full bg-cyan px-6 text-sm font-medium text-navy transition hover:bg-cyan/80"
         >
           Back to Pro Life
         </Link>

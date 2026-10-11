@@ -14,9 +14,9 @@ export const metadata: Metadata = pageMetadata({
 export default function ForBrandsPage() {
   return (
     <>
-      <section className="bg-ink text-white">
+      <section className="bg-navy-deep text-white">
         <Container className="py-16 lg:py-24">
-          <p className="text-xs tracking-[0.22em] text-gold uppercase">For brands</p>
+          <p className="text-xs tracking-[0.22em] text-cyan uppercase">For brands</p>
           <h1 className="mt-4 max-w-4xl font-display text-5xl leading-[0.98] font-semibold tracking-tight sm:text-7xl">
             Grow Your Brand With Pro Life
           </h1>

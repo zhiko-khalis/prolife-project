@@ -21,7 +21,12 @@ export function BrandLogo({
       height={brand.logoHeight}
       priority={priority}
       sizes={sizes}
-      className={cn("h-auto w-full object-contain", className)}
+      className={cn(
+        "h-auto w-full object-contain",
+        brand.slug === "dr-vivo" && "[clip-path:inset(0_2px_2px_0)]",
+        brand.slug === "monivo" && "[clip-path:inset(0_4px_0_4px)]",
+        className,
+      )}
     />
   );
 }

@@ -2,23 +2,33 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0b2526;
-  --health: #2e8b78;
-  --health-deep: #145e52;
-  --gold: #c9a86a;
-  --mist: #f5f8f6;
-  --line: rgba(11, 37, 38, 0.12);
+  --foreground: #0b2340;
+  --brand-navy: #0b2340;
+  --brand-cyan: #55c8d9;
+  --brand-cyan-deep: #167789;
+  --brand-surface: #f3f7f9;
+  --brand-navy-deep: #071923;
+  --brand-body: #52636e;
+  --brand-line: rgba(11, 35, 64, 0.12);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-ink: #0b2526;
-  --color-health: #2e8b78;
-  --color-health-deep: #145e52;
-  --color-mist: #f5f8f6;
-  --color-gold: #c9a86a;
-  --color-line: rgba(11, 37, 38, 0.12);
+  --color-navy: var(--brand-navy);
+  --color-cyan: var(--brand-cyan);
+  --color-cyan-deep: var(--brand-cyan-deep);
+  --color-surface: var(--brand-surface);
+  --color-navy-deep: var(--brand-navy-deep);
+  --color-body: var(--brand-body);
+  --color-line: var(--brand-line);
+
+  /* Compatibility aliases for the existing component vocabulary. */
+  --color-ink: var(--brand-navy);
+  --color-health: var(--brand-cyan);
+  --color-health-deep: var(--brand-cyan-deep);
+  --color-mist: var(--brand-surface);
+  --color-gold: var(--brand-cyan);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
 }
@@ -35,12 +45,12 @@ body {
 }
 
 ::selection {
-  background: #d7ebe4;
-  color: #0b2526;
+  background: rgba(85, 200, 217, 0.28);
+  color: var(--brand-navy);
 }
 
 :focus-visible {
-  outline: 2px solid #145e52;
+  outline: 2px solid var(--brand-cyan-deep);
   outline-offset: 3px;
 }
 

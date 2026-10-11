@@ -57,7 +57,7 @@ export function MobileNav({
           role="dialog"
           aria-modal="true"
           aria-label="Menu"
-          className="fixed inset-0 z-[60] flex flex-col bg-ink text-white"
+          className="fixed inset-0 z-[60] flex flex-col bg-navy-deep text-white"
           initial={reduce ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={reduce ? undefined : { opacity: 0 }}
@@ -93,7 +93,7 @@ export function MobileNav({
                     <Link
                       href={item.href}
                       className={`block py-3 font-display text-4xl tracking-tight ${
-                        active ? "text-gold" : "text-white"
+                        active ? "text-cyan" : "text-white"
                       }`}
                       onClick={onClose}
                     >
@@ -108,7 +108,7 @@ export function MobileNav({
             <Link
               href="/for-brands"
               onClick={onClose}
-              className="inline-flex min-h-12 items-center rounded-full bg-white px-6 text-sm font-medium text-ink"
+              className="inline-flex min-h-12 items-center rounded-full bg-cyan px-6 text-sm font-medium text-navy transition hover:bg-cyan/80"
             >
               Business Inquiry
             </Link>

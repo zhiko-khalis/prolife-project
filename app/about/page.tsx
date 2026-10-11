@@ -47,9 +47,9 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="bg-ink text-white" aria-labelledby="story-heading">
+      <section className="bg-navy-deep text-white" aria-labelledby="story-heading">
         <Container className="grid gap-10 py-20 lg:grid-cols-12 lg:py-28">
-          <p className="font-display text-7xl font-semibold tracking-tight text-gold lg:col-span-4">
+          <p className="font-display text-7xl font-semibold tracking-tight text-cyan lg:col-span-4">
             {company.founded}
           </p>
           <div className="lg:col-span-7">

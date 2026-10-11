@@ -30,27 +30,27 @@ export default function ContactPage() {
           ))}
         </div>
 
-        <dl className="mt-8 grid gap-6 rounded-[2rem] bg-ink p-8 text-white sm:p-10 lg:grid-cols-3">
+        <dl className="mt-8 grid gap-6 rounded-[2rem] bg-navy-deep p-8 text-white sm:p-10 lg:grid-cols-3">
           <div>
-            <dt className="text-xs tracking-[0.18em] text-gold uppercase">Customer Service</dt>
+            <dt className="text-xs tracking-[0.18em] text-cyan uppercase">Customer Service</dt>
             <dd className="mt-3 text-lg">
-              <a className="hover:text-gold" href={`mailto:${company.email}`}>
+              <a className="hover:text-cyan" href={`mailto:${company.email}`}>
                 {company.email}
               </a>
             </dd>
           </div>
           <div>
-            <dt className="text-xs tracking-[0.18em] text-gold uppercase">Business Inquiries</dt>
+            <dt className="text-xs tracking-[0.18em] text-cyan uppercase">Business Inquiries</dt>
             <dd className="mt-3 text-lg">
-              <a className="hover:text-gold" href={`mailto:${company.businessEmail}`}>
+              <a className="hover:text-cyan" href={`mailto:${company.businessEmail}`}>
                 {company.businessEmail}
               </a>
             </dd>
           </div>
           <div>
-            <dt className="text-xs tracking-[0.18em] text-gold uppercase">Phone / WhatsApp</dt>
+            <dt className="text-xs tracking-[0.18em] text-cyan uppercase">Phone / WhatsApp</dt>
             <dd className="mt-3 text-lg">
-              <a className="hover:text-gold" href={`tel:${company.phone}`}>
+              <a className="hover:text-cyan" href={`tel:${company.phone}`}>
                 {company.phoneDisplay}
               </a>
             </dd>

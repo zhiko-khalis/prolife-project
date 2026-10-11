@@ -68,7 +68,7 @@ export default function HomePage() {
 
       <AboutPreview />
 
-      <section className="bg-ink text-white" aria-labelledby="distribution-heading">
+      <section className="bg-navy-deep text-white" aria-labelledby="distribution-heading">
         <Container className="grid items-center gap-12 py-20 lg:grid-cols-2 lg:py-28">
           <div>
             <SectionHeading

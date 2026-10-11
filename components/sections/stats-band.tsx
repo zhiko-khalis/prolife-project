@@ -45,11 +45,11 @@ function StatItem({
   const display = useCount(value, active, count);
   return (
     <div className="px-2 py-6 sm:px-6">
-      <p className="font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+      <p className="font-display text-4xl font-semibold tracking-tight text-navy sm:text-5xl">
         {display}
         {suffix}
       </p>
-      <p className="mt-2 text-sm tracking-wide text-white/65">{label}</p>
+      <p className="mt-2 text-sm tracking-wide text-navy/65">{label}</p>
     </div>
   );
 }
@@ -72,16 +72,16 @@ export function StatsBand() {
   }, []);
 
   return (
-    <section ref={ref} aria-label="Company figures" className="bg-ink">
+    <section ref={ref} aria-label="Company figures" className="bg-cyan">
       <div className="mx-auto grid max-w-[1240px] grid-cols-2 lg:grid-cols-4">
         {stats.map((stat, index) => (
           <div
             key={stat.label}
             className={[
-              index % 2 === 1 ? "border-l border-white/10" : "",
-              index >= 2 ? "border-t border-white/10" : "",
+              index % 2 === 1 ? "border-l border-navy/15" : "",
+              index >= 2 ? "border-t border-navy/15" : "",
               "lg:border-t-0",
-              index > 0 ? "lg:border-l lg:border-white/10" : "",
+              index > 0 ? "lg:border-l lg:border-navy/15" : "",
             ].join(" ")}
           >
             <StatItem

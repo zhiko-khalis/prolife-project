@@ -125,8 +125,8 @@ function FilterButton({
       onClick={onClick}
       className={`min-h-11 rounded-full border px-4 text-sm transition ${
         pressed
-          ? "border-ink bg-ink text-white"
-          : "border-ink/15 bg-white text-ink hover:border-ink/40"
+          ? "border-cyan bg-cyan text-navy"
+          : "border-ink/15 bg-white text-ink hover:border-cyan"
       }`}
     >
       {children}

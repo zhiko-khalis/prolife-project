@@ -14,12 +14,12 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "flex-end",
-          background: "#0B2526",
-          color: "#F5F8F6",
+          background: "#071923",
+          color: "#F3F7F9",
           padding: "72px",
         }}
       >
-        <div style={{ display: "flex", fontSize: 22, letterSpacing: 8, color: "#C9A86A" }}>
+        <div style={{ display: "flex", fontSize: 22, letterSpacing: 8, color: "#55C8D9" }}>
           PRO LIFE
         </div>
         <div
@@ -34,7 +34,7 @@ export default function OpenGraphImage() {
         >
           Better Products. Healthier Lives.
         </div>
-        <div style={{ display: "flex", marginTop: 28, width: 72, height: 4, background: "#2E8B78" }} />
+        <div style={{ display: "flex", marginTop: 28, width: 72, height: 4, background: "#55C8D9" }} />
       </div>
     ),
     { ...size },

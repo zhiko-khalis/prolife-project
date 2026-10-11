@@ -5,12 +5,12 @@ type Variant = "primary" | "secondary" | "light" | "ghost" | "gold";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-ink text-white hover:bg-[#16383a] shadow-[0_1px_0_rgba(255,255,255,0.08)_inset]",
+    "bg-cyan text-navy hover:bg-cyan/80 shadow-[0_1px_0_rgba(255,255,255,0.35)_inset]",
   secondary:
-    "border border-ink/15 bg-white text-ink hover:border-ink hover:bg-ink hover:text-white",
-  light: "bg-white text-ink hover:bg-mist",
+    "border border-navy/15 bg-white text-navy hover:border-cyan hover:bg-cyan hover:text-navy",
+  light: "bg-white text-navy hover:bg-surface",
   ghost: "bg-transparent text-current underline-offset-4 hover:underline",
-  gold: "bg-gold text-ink hover:bg-[#d4b67a]",
+  gold: "bg-cyan text-navy hover:bg-cyan/80",
 };
 
 type Common = {

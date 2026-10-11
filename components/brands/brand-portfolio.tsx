@@ -23,7 +23,7 @@ export function BrandPortfolio({ detailed = false }: { detailed?: boolean }) {
               >
                 <Link
                   href={`/brands/${brand.slug}`}
-                  className="flex min-h-64 items-center justify-center rounded-[2rem] bg-white px-8 py-10 shadow-[0_20px_60px_rgba(11,37,38,0.06)]"
+                  className="flex min-h-64 items-center justify-center rounded-[2rem] bg-white px-8 py-10 shadow-[0_20px_60px_rgba(11,35,64,0.08)]"
                   aria-label={`${brand.name} brand`}
                 >
                   <div className="w-full max-w-md">

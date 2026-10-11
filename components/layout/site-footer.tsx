@@ -5,11 +5,11 @@ import { Container } from "@/components/ui/container";
 
 export function SiteFooter() {
   return (
-    <footer className="bg-ink text-white">
+    <footer className="bg-navy-deep text-white">
       <Container className="grid gap-12 py-16 sm:py-20 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-4">
-          <Link href="/" aria-label="Pro Life home" className="inline-flex rounded-2xl bg-white px-4 py-3">
-            <CompanyLogo className="h-16" />
+          <Link href="/" aria-label="Pro Life home" className="inline-flex">
+            <CompanyLogo className="h-16" whiteText />
           </Link>
           <p className="mt-5 max-w-xs font-display text-3xl leading-tight font-medium tracking-tight text-white">
             Better Products. Healthier Lives.
@@ -21,7 +21,7 @@ export function SiteFooter() {
         </div>
 
         <div className="lg:col-span-2">
-          <p className="text-xs tracking-[0.18em] text-gold uppercase">Company</p>
+          <p className="text-xs tracking-[0.18em] text-cyan uppercase">Company</p>
           <ul className="mt-5 space-y-3 text-sm text-white/80">
             {mainNav.slice(0, 4).map((item) => (
               <li key={item.href}>
@@ -34,7 +34,7 @@ export function SiteFooter() {
         </div>
 
         <div className="lg:col-span-3">
-          <p className="text-xs tracking-[0.18em] text-gold uppercase">Business</p>
+          <p className="text-xs tracking-[0.18em] text-cyan uppercase">Business</p>
           <ul className="mt-5 space-y-3 text-sm text-white/80">
             <li>
               <Link href="/for-brands" className="hover:text-white">
@@ -55,7 +55,7 @@ export function SiteFooter() {
         </div>
 
         <div className="lg:col-span-3">
-          <p className="text-xs tracking-[0.18em] text-gold uppercase">Contact</p>
+          <p className="text-xs tracking-[0.18em] text-cyan uppercase">Contact</p>
           <ul className="mt-5 space-y-3 text-sm text-white/80">
             {offices.map((office) => (
               <li key={office.id}>

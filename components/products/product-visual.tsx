@@ -34,7 +34,7 @@ export function ProductVisual({
         ratioClass[ratio],
         className,
       )}
-      style={image ? undefined : { backgroundColor: brand?.colors.surface ?? "#F5F8F6" }}
+      style={image ? undefined : { backgroundColor: brand?.colors.surface ?? "#F3F7F9" }}
     >
       {image ? (
         <Image
@@ -49,7 +49,7 @@ export function ProductVisual({
         <div className="flex h-full flex-col items-center justify-center px-6 py-8">
           <div
             className="mb-6 h-1 w-10"
-            style={{ backgroundColor: brand?.colors.accent ?? "#2E8B78" }}
+            style={{ backgroundColor: brand?.colors.accent ?? "#55C8D9" }}
           />
           {brand ? (
             <div className="w-[72%] max-w-[240px]">

@@ -19,7 +19,7 @@ export function ProductCard({
     <Link
       href={`/products/${product.slug}`}
       className={cn(
-        "group flex h-full flex-col overflow-hidden rounded-3xl border border-ink/10 bg-white transition duration-300 hover:-translate-y-1 hover:border-ink/20 hover:shadow-[0_18px_50px_rgba(11,37,38,0.08)]",
+        "group flex h-full flex-col overflow-hidden rounded-3xl border border-ink/10 bg-white transition duration-300 hover:-translate-y-1 hover:border-cyan/35 hover:shadow-[0_18px_50px_rgba(11,35,64,0.10)]",
         className,
       )}
     >
