@@ -34,15 +34,17 @@ export function CompanyLogo({
         style={logoStyle}
       />
       {whiteText ? (
-        <Image
-          src="/logo/prolife.png"
-          alt=""
-          width={6251}
-          height={6251}
-          sizes="160px"
-          className="absolute max-w-none [clip-path:inset(0_0_35%_0)]"
-          style={logoStyle}
-        />
+        <span className="pointer-events-none absolute inset-0 overflow-hidden [clip-path:inset(0_0_48%_0)]">
+          <Image
+            src="/logo/prolife.png"
+            alt=""
+            width={6251}
+            height={6251}
+            sizes="160px"
+            className="absolute max-w-none"
+            style={logoStyle}
+          />
+        </span>
       ) : null}
     </span>
   );

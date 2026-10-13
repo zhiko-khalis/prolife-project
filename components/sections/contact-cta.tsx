@@ -11,7 +11,7 @@ export function ContactCta() {
         >
           Let&apos;s Build a Healthier Future Together.
         </h2>
-        <dl className="mt-12 grid gap-8 border-t border-ink/10 pt-10 sm:grid-cols-2 lg:grid-cols-3">
+        <dl className="mt-12 grid gap-8 border-t border-ink/10 pt-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {offices.map((office) => (
             <div key={office.id}>
               <dt className="text-xs tracking-[0.18em] text-health-deep uppercase">{office.city}</dt>

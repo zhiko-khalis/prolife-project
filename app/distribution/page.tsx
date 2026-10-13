@@ -9,7 +9,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Distribution",
   description:
-    "Pro Life distributes healthcare and wellness products from Erbil and Riyadh across Iraq, Saudi Arabia, and the wider MENA region.",
+    "Pro Life distributes healthcare and wellness products from Riyadh, Erbil, Baghdad, Gaziantep, and Aleppo across the wider MENA region.",
   path: "/distribution",
 });
 
@@ -24,8 +24,8 @@ export default function DistributionPage() {
               From Iraq to the Region
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/75">
-              Pro Life imports, exports, and distributes healthcare and wellness products from its
-              head office in Erbil and its regional office in Riyadh.
+              Pro Life imports, exports, and distributes healthcare and wellness products from
+              offices in Riyadh, Erbil, Baghdad, Gaziantep, and Aleppo.
             </p>
           </div>
           <RegionVisual />
@@ -39,9 +39,9 @@ export default function DistributionPage() {
           </h2>
           <div className="space-y-5 text-lg leading-8 text-ink/75 lg:col-span-7 lg:col-start-6">
             <p>
-              Iraq is home to the Erbil headquarters and eight sales channels. Saudi Arabia is
-              served from the Riyadh regional office. The wider MENA region is part of the
-              company&apos;s distribution horizon.
+              Iraq is served from Erbil and Baghdad, with eight sales channels. Saudi Arabia is
+              served from Riyadh, Turkey from Gaziantep, and Syria from Aleppo. The wider MENA
+              region is part of the company&apos;s distribution horizon.
             </p>
             <p>{company.story}</p>
           </div>

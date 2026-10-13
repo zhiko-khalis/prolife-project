@@ -10,7 +10,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "About",
   description:
-    "Pro Life is a healthcare and wellness trading company founded in 2020, headquartered in Erbil with a regional office in Riyadh.",
+    "Pro Life is a healthcare and wellness trading company founded in 2020, with offices in Riyadh, Erbil, Baghdad, Gaziantep, and Aleppo.",
   path: "/about",
 });
 
@@ -40,8 +40,8 @@ export default function AboutPage() {
               manages Dr. Vivo, Happy, Shireen, and Monivo, and also distributes other brands.
             </p>
             <p>
-              The work serves consumers and businesses from the Erbil headquarters and the Riyadh
-              regional office.
+              The work serves consumers and businesses from offices in Riyadh, Erbil, Baghdad,
+              Gaziantep, and Aleppo.
             </p>
           </div>
         </Container>
@@ -103,14 +103,14 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <WhyProLife heading="Why Pro Life" intro={company.teamDetail + ", working from two regional offices."} />
+      <WhyProLife heading="Why Pro Life" intro={company.teamDetail + ", working from five regional offices."} />
 
       <section aria-labelledby="locations-heading">
         <Container className="py-20 lg:py-28">
           <h2 id="locations-heading" className="font-display text-4xl font-semibold tracking-tight sm:text-5xl">
             Our Locations
           </h2>
-          <div className="mt-12 grid gap-10 md:grid-cols-2">
+          <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
             {offices.map((office) => (
               <article key={office.id} className="border-t border-ink pt-6">
                 <p className="text-xs tracking-[0.18em] text-health-deep uppercase">{office.role}</p>

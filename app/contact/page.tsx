@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Contact",
   description:
-    "Contact Pro Life in Erbil and Riyadh for customer service, business inquiries, and WhatsApp.",
+    "Contact Pro Life in Riyadh, Erbil, Baghdad, Gaziantep, and Aleppo for customer service, business inquiries, and WhatsApp.",
   path: "/contact",
 });
 
@@ -20,7 +20,7 @@ export default function ContactPage() {
           Let&apos;s Build a Healthier Future Together.
         </h1>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-2">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {offices.map((office) => (
             <article key={office.id} className="rounded-[2rem] bg-white p-8 sm:p-10">
               <p className="text-xs tracking-[0.18em] text-health-deep uppercase">{office.role}</p>

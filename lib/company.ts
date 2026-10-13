@@ -5,39 +5,60 @@ export const company = {
   team: "27+",
   teamDetail: "Approximately 27 professionals",
   salesChannels: 8,
-  offices: 2,
+  offices: 5,
   email: "info@prolifehealth.co",
   businessEmail: "bdmanager@prolifehealth.co",
   phone: "+9647702125000",
   phoneDisplay: "+964 770 212 5000",
   whatsapp: "https://wa.me/9647702125000",
   description:
-    "Pro Life is a healthcare and wellness trading and distribution company headquartered in Erbil, Iraq, with a regional office in Riyadh, Saudi Arabia.",
+    "Pro Life is a healthcare and wellness trading and distribution company with presence in Riyadh, Erbil, Baghdad, Gaziantep, and Aleppo.",
   summary:
     "Pro Life is a leading general trading company specializing in healthcare solutions. We import, export, and distribute a diverse range of health and wellness products. Pro Life owns and manages several proprietary brands while also distributing other brands.",
   story:
-    "Founded in 2020, Pro Life has grown into a regional healthcare and wellness company. From our headquarters in Erbil and regional office in Riyadh, our experienced team combines local market knowledge with international expertise to deliver health and wellness solutions throughout Iraq, Saudi Arabia and the wider MENA region.",
+    "Founded in 2020, Pro Life has grown into a regional healthcare and wellness company. From our locations in Riyadh, Erbil, Baghdad, Gaziantep, and Aleppo, our experienced team combines local market knowledge with international expertise to deliver health and wellness solutions throughout Iraq, Saudi Arabia, Turkey, Syria, and the wider MENA region.",
   vision:
     "Our vision is to build healthier and better lives for people in our world. We aim to be the preferred partner in wellness by expanding access to superior health products and solutions.",
   mission:
     "Our mission is to provide better products that enhance health and well-being. We focus on sourcing and delivering innovative wellness solutions that meet the needs of consumers and businesses alike.",
   heroSupport:
-    "Pro Life develops, imports and distributes healthcare and wellness products across Iraq, Saudi Arabia and the wider MENA region.",
+    "Pro Life develops, imports and distributes healthcare and wellness products across Iraq, Saudi Arabia, Turkey, Syria, and the wider MENA region.",
 } as const;
 
 export const offices = [
   {
+    id: "riyadh",
+    title: "Riyadh",
+    city: "Riyadh",
+    address: "Riyadh, Saudi Arabia",
+    role: "Regional office",
+  },
+  {
     id: "erbil",
-    title: "Erbil Headquarters",
+    title: "Erbil",
     city: "Erbil",
-    address: "Erbil, Kurdistan Region, Iraq",
+    address: "Erbil, Iraq",
     role: "Head office",
   },
   {
-    id: "riyadh",
-    title: "Riyadh Regional Office",
-    city: "Riyadh",
-    address: "Riyadh, Kingdom of Saudi Arabia",
+    id: "baghdad",
+    title: "Baghdad",
+    city: "Baghdad",
+    address: "Baghdad, Iraq",
+    role: "Regional office",
+  },
+  {
+    id: "gaziantep",
+    title: "Gaziantep",
+    city: "Gaziantep",
+    address: "Gaziantep, Turkey",
+    role: "Regional office",
+  },
+  {
+    id: "aleppo",
+    title: "Aleppo",
+    city: "Aleppo",
+    address: "Aleppo, Syria",
     role: "Regional office",
   },
 ] as const;
@@ -46,7 +67,7 @@ export const stats = [
   { value: 2020, suffix: "", label: "Founded", count: false },
   { value: 27, suffix: "+", label: "Professionals", count: true },
   { value: 8, suffix: "", label: "Sales Channels", count: true },
-  { value: 2, suffix: "", label: "Regional Offices", count: true },
+  { value: 5, suffix: "", label: "Regional Offices", count: true },
 ] as const;
 
 export const salesChannels = [
@@ -88,7 +109,7 @@ export const whyProLife = [
   },
   {
     title: "Regional Network",
-    text: "Eight sales channels in Iraq, coordinated from Erbil with a regional office in Riyadh.",
+    text: "Eight sales channels in Iraq, supported by offices in Riyadh, Erbil, Baghdad, Gaziantep, and Aleppo.",
   },
   {
     title: "Customer Focus",
@@ -96,7 +117,7 @@ export const whyProLife = [
   },
   {
     title: "International Reach",
-    text: "Import, export, and distribution across Iraq, Saudi Arabia, and the wider MENA region.",
+    text: "Import, export, and distribution across Iraq, Saudi Arabia, Turkey, Syria, and the wider MENA region.",
   },
 ] as const;
 
@@ -115,14 +136,14 @@ export const activities = [
   },
   {
     title: "Regional coverage",
-    text: "We serve Iraq, Saudi Arabia, and the wider MENA region from Erbil and Riyadh.",
+    text: "We serve the region from Riyadh, Erbil, Baghdad, Gaziantep, and Aleppo.",
   },
 ] as const;
 
 export const partnerCapabilities = [
   {
     title: "Market Access",
-    text: "A route into Iraq, Saudi Arabia, and the wider MENA region.",
+    text: "A route into Iraq, Saudi Arabia, Turkey, Syria, and the wider MENA region.",
   },
   {
     title: "Import & Distribution",
@@ -130,7 +151,7 @@ export const partnerCapabilities = [
   },
   {
     title: "Sales Network",
-    text: "Eight sales channels in Iraq, with regional coordination from Riyadh.",
+    text: "Eight sales channels in Iraq, with regional coordination across our offices.",
   },
   {
     title: "Retail & Pharmacy",

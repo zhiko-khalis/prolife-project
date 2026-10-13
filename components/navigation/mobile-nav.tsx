@@ -2,7 +2,8 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { CompanyLogo } from "@/components/layout/company-logo";
 import { mainNav } from "@/lib/company";
 
@@ -17,6 +18,11 @@ export function MobileNav({
 }) {
   const panelRef = useRef<HTMLDivElement>(null);
   const reduce = useReducedMotion();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -49,11 +55,14 @@ export function MobileNav({
     };
   }, [open, onClose]);
 
-  return (
+  if (!mounted) return null;
+
+  return createPortal(
     <AnimatePresence>
       {open ? (
         <motion.div
           ref={panelRef}
+          id="mobile-menu"
           role="dialog"
           aria-modal="true"
           aria-label="Menu"
@@ -64,8 +73,8 @@ export function MobileNav({
           transition={{ duration: 0.25 }}
         >
           <div className="flex items-center justify-between px-5 py-5 sm:px-8">
-            <Link href="/" onClick={onClose} aria-label="Pro Life home" className="inline-flex rounded-2xl bg-white px-3 py-1.5">
-              <CompanyLogo alt="" className="h-10" />
+            <Link href="/" onClick={onClose} aria-label="Pro Life home" className="inline-flex">
+              <CompanyLogo alt="" className="h-14" whiteText />
             </Link>
             <button
               type="button"
@@ -79,10 +88,11 @@ export function MobileNav({
               </span>
             </button>
           </div>
-          <nav className="flex flex-1 flex-col justify-center px-6" aria-label="Mobile">
+          <nav className="flex flex-1 flex-col items-center justify-center px-6 text-center" aria-label="Mobile">
             <ul className="space-y-1">
               {mainNav.map((item, index) => {
-                const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
+                const active =
+                  pathname === item.href || pathname.startsWith(`${item.href}/`);
                 return (
                   <motion.li
                     key={item.href}
@@ -104,7 +114,7 @@ export function MobileNav({
               })}
             </ul>
           </nav>
-          <div className="px-6 pb-10">
+          <div className="flex justify-center px-6 pb-10">
             <Link
               href="/for-brands"
               onClick={onClose}
@@ -115,6 +125,7 @@ export function MobileNav({
           </div>
         </motion.div>
       ) : null}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body,
   );
 }

@@ -15,8 +15,8 @@ export function SiteFooter() {
             Better Products. Healthier Lives.
           </p>
           <p className="mt-5 max-w-sm text-sm leading-6 text-white/65">
-            Healthcare and wellness trading, import, export, and distribution from Erbil and
-            Riyadh.
+            Healthcare and wellness trading, import, export, and distribution from Riyadh, Erbil,
+            Baghdad, Gaziantep, and Aleppo.
           </p>
         </div>
 

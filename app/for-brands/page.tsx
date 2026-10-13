@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "For Brands",
   description:
-    "Partner with Pro Life for market access and distribution in Iraq, Saudi Arabia, and the wider MENA region.",
+    "Partner with Pro Life for market access and distribution in Iraq, Saudi Arabia, Turkey, Syria, and the wider MENA region.",
   path: "/for-brands",
 });
 
@@ -22,7 +22,7 @@ export default function ForBrandsPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/75">
             Pro Life provides market access and distribution for healthcare and wellness brands in
-            Iraq, Saudi Arabia, and the wider MENA region.
+            Iraq, Saudi Arabia, Turkey, Syria, and the wider MENA region.
           </p>
         </Container>
       </section>
@@ -34,8 +34,8 @@ export default function ForBrandsPage() {
               How we work with brands
             </h2>
             <p className="mt-5 text-lg leading-8 text-ink/70">
-              A regional trading and distribution partner, with offices in Erbil and Riyadh and
-              eight sales channels in Iraq.
+              A regional trading and distribution partner, with offices in Riyadh, Erbil, Baghdad,
+              Gaziantep, and Aleppo, and eight sales channels in Iraq.
             </p>
           </div>
           <ol className="divide-y divide-ink/10 border-y border-ink/10 lg:col-span-7 lg:col-start-6">

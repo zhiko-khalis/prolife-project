@@ -34,14 +34,28 @@ const organization = {
   address: [
     {
       "@type": "PostalAddress",
+      addressLocality: "Riyadh",
+      addressCountry: "SA",
+    },
+    {
+      "@type": "PostalAddress",
       addressLocality: "Erbil",
-      addressRegion: "Kurdistan Region",
       addressCountry: "IQ",
     },
     {
       "@type": "PostalAddress",
-      addressLocality: "Riyadh",
-      addressCountry: "SA",
+      addressLocality: "Baghdad",
+      addressCountry: "IQ",
+    },
+    {
+      "@type": "PostalAddress",
+      addressLocality: "Gaziantep",
+      addressCountry: "TR",
+    },
+    {
+      "@type": "PostalAddress",
+      addressLocality: "Aleppo",
+      addressCountry: "SY",
     },
   ],
 };
@@ -76,7 +90,7 @@ export default function HomePage() {
               invert
               eyebrow="Presence"
               title="From Iraq to the Region"
-              text="Pro Life is headquartered in Erbil, with a regional office in Riyadh. From there, the company distributes healthcare and wellness products across Iraq, Saudi Arabia, and the wider MENA region."
+              text="Pro Life operates from Riyadh, Erbil, Baghdad, Gaziantep, and Aleppo. From these locations, the company distributes healthcare and wellness products across Iraq, Saudi Arabia, Turkey, Syria, and the wider MENA region."
             />
           </div>
           <RegionVisual />
